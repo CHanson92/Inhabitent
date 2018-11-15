@@ -1,0 +1,161 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+  @include font-size(1);
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+#page {
+  display: grid;
+  grid-template-rows: 49.5rem 1fr 22rem;
+}
+
+header {
+  background-image: url('/inhabitent/wp-content/themes/inhabitent/images/home-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3rem 1fr;
+    
+  .logo {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: center;
+      align-self: center;
+    }
+
+  #site-navigation {
+    grid-column: 3;
+    grid-row: 1;
+      li {
+        padding: 1rem;
+        a {
+          color: white;
+            }
+      }
+  }
+}
+
+.page-header {
+  background: transparent;
+}
+
+footer {
+  background-image: url('/inhabitent/wp-content/themes/inhabitent/images/dark-wood@2x.png');
+  background-size: contain;
+  color:white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5rem;
+
+  .site-info {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    h3 {
+      color: orange;
+    }
+      a {
+        color: white;
+      }
+    }
+  
+    .business-hours {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: center;
+      h3 {
+        color: orange;
+      }
+        p {
+          color: white;
+        }
+      }
+
+      .inhabitent-logo {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+      }
+
+      .copyright {
+        grid-column: 2;
+        grid-row: 2;    
+        justify-self: center;
+        p {
+          color: white;
+        }
+      }
+  }
+
+
+blockquote,
+q {
+  quotes: '' '';
+
+  &:before,
+  &:after {
+    content: '';
+  }
+}
+
+hr {
+  background-color: $color__background-hr;
+  border: 0;
+  height: 1px;
+  margin-bottom: $base__space-unit;
+}
+
+ul,
+ol {
+  margin: 0 0 $base__space-unit ($base__space-unit * 2);
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: $base__space-unit;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 $base__space-unit $base__space-unit;
+}
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+
+table {
+  margin: 0 0 $base__space-unit;
+  width: 100%;
+}
