@@ -225,6 +225,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather-Bold';
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Bold.eot");
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-Italic';
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-LightItalic.eot");
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Light.eot");
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-BoldItalic';
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-BoldItalic.eot");
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-BoldItalic.woff") format("woff"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento';
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/47679d8b9b377cf3f6c0f9245446850c.eot");
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/47679d8b9b377cf3f6c0f9245446850c.eot?#iefix") format("embedded-opentype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/47679d8b9b377cf3f6c0f9245446850c.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/47679d8b9b377cf3f6c0f9245446850c.woff") format("woff"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/47679d8b9b377cf3f6c0f9245446850c.ttf") format("truetype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/47679d8b9b377cf3f6c0f9245446850c.svg#.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento-Bold';
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/b75a51577d75fc2109090a54bd4be0f3.eot");
+  src: url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/b75a51577d75fc2109090a54bd4be0f3.eot?#iefix") format("embedded-opentype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/b75a51577d75fc2109090a54bd4be0f3.woff2") format("woff2"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/b75a51577d75fc2109090a54bd4be0f3.woff") format("woff"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/b75a51577d75fc2109090a54bd4be0f3.ttf") format("truetype"), url("/inhabitent/wp-content/themes/inhabitent/fonts/Novecento/b75a51577d75fc2109090a54bd4be0f3.svg#.") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -301,75 +343,16 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  line-height: 1.75;
+  font-size: 16px; }
 
 #page {
   display: grid;
   grid-template-rows: 49.5rem 1fr 22rem; }
 
-header {
-  background-image: url("/inhabitent/wp-content/themes/inhabitent/images/home-hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 3rem 1fr; }
-  header .logo {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-    -ms-flex-item-align: center;
-        align-self: center; }
-  header #site-navigation {
-    grid-column: 3;
-    grid-row: 1; }
-    header #site-navigation li {
-      padding: 1rem; }
-      header #site-navigation li a {
-        color: white; }
-
 .page-header {
   background: transparent; }
-
-footer {
-  background-image: url("/inhabitent/wp-content/themes/inhabitent/images/dark-wood@2x.png");
-  background-size: contain;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 5rem; }
-  footer .site-info {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: center;
-    -ms-flex-item-align: center;
-        align-self: center; }
-    footer .site-info h3 {
-      color: orange; }
-    footer .site-info a {
-      color: white; }
-  footer .business-hours {
-    grid-column: 2;
-    grid-row: 1;
-    -ms-flex-item-align: center;
-        align-self: center; }
-    footer .business-hours h3 {
-      color: orange; }
-    footer .business-hours p {
-      color: white; }
-  footer .inhabitent-logo {
-    grid-column: 3;
-    grid-row: 1;
-    -ms-flex-item-align: center;
-        align-self: center;
-    justify-self: center; }
-  footer .copyright {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center; }
-    footer .copyright p {
-      color: white; }
 
 blockquote,
 q {
@@ -428,31 +411,11 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+  padding: .6rem 1rem .4rem; }
 
 /* Fields */
 input[type="text"],
@@ -488,11 +451,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: white; }
   a:visited {
-    color: purple; }
+    color: white; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: lightgrey; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -738,3 +701,255 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/inhabitent/wp-content/themes/inhabitent/images/home-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/inhabitent/wp-content/themes/inhabitent/images/home-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3rem 1fr; }
+  header .site-branding {
+    margin-left: 7rem; }
+    header .site-branding .homelogo {
+      margin: 0; }
+    header .site-branding .home {
+      height: 2rem;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  header nav {
+    grid-column: 3; }
+    header nav .menu-site-navigation-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 3rem; }
+    header nav li {
+      font-size: 1rem;
+      line-height: 1.75;
+      padding-left: 1.5rem; }
+      header nav li a {
+        color: white;
+        font-family: "Novecento";
+        text-shadow: 1px 1px 2px #323232; }
+  header .logo {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+footer {
+  background-image: url("/inhabitent/wp-content/themes/inhabitent/images/dark-wood@2x.png");
+  background-size: contain;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 5rem; }
+  footer .site-info {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    footer .site-info h3 {
+      color: #d99054;
+      font-family: 'Novecento-Bold';
+      letter-spacing: 2px; }
+    footer .site-info a {
+      color: white;
+      font-family: 'Merriweather';
+      padding-left: 0.5rem; }
+    footer .site-info .icons {
+      padding: 0.25rem; }
+  footer .business-hours {
+    grid-column: 2;
+    grid-row: 1;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    footer .business-hours h3 {
+      color: #d99054;
+      font-family: 'Novecento-Bold';
+      letter-spacing: 2px; }
+    footer .business-hours p {
+      color: white;
+      font-family: 'Merriweather'; }
+      footer .business-hours p .week {
+        font-family: 'Merriweather-Bold'; }
+  footer .inhabitent-logo {
+    grid-column: 3;
+    grid-row: 1;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center; }
+  footer .copyright {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center; }
+    footer .copyright p {
+      color: white;
+      font-family: 'Novecento'; }
+
+/* Shop page */
+/* Journal page */
+.blog #page {
+  grid-template-rows: 3rem auto;
+  grid-template-columns: 1fr 26rem; }
+
+.blog header {
+  grid-template-rows: 1fr;
+  grid-column: 1/3;
+  background-image: none;
+  border-bottom: 1px solid #e1e1e1; }
+  .blog header .logo {
+    display: none; }
+
+.blog .entry-header {
+  display: none; }
+
+.blog #secondary {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  font-family: "Merriweather"; }
+  .blog #secondary h2 {
+    font-family: "Novecento";
+    color: #2f1339;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 2px; }
+  .blog #secondary span {
+    font-family: "Merriweather-Bold"; }
+
+/* About Us page */
+.page-id-30 #page {
+  grid-template-rows: 49.5rem 1fr; }
+
+.page-id-30 header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/inhabitent/wp-content/themes/inhabitent/images/about-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/inhabitent/wp-content/themes/inhabitent/images/about-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3rem 1fr; }
+  .page-id-30 header .logo {
+    display: none; }
+  .page-id-30 header .about {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 3rem; }
+
+.page-id-30 .entry-header {
+  display: none; }
+
+.page-id-30 .entry-content {
+  max-width: 800px;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem; }
+  .page-id-30 .entry-content h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    line-height: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    font-family: "Novecento-Bold";
+    color: #2f1339; }
+  .page-id-30 .entry-content p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: "Merriweather"; }
+
+/* Find Us page */
+.page-id-32 #page {
+  grid-template-rows: 3rem auto;
+  grid-template-columns: 1fr 26rem; }
+
+.page-id-32 header {
+  grid-template-rows: 1fr;
+  grid-column: 1/3;
+  background-image: none;
+  border-bottom: 1px solid #e1e1e1; }
+  .page-id-32 header .logo {
+    display: none; }
+  .page-id-32 header nav li a {
+    color: #248A83;
+    text-shadow: none; }
+
+.page-id-32 .entry-header {
+  display: none; }
+
+.page-id-32 #primary {
+  grid-row: 2;
+  border-right: 1px solid #e1e1e1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .page-id-32 #primary iframe {
+    border: none; }
+  .page-id-32 #primary h2 {
+    margin-left: 5%;
+    font-size: 2.1rem;
+    line-height: 1.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    font-family: "Novecento-Bold";
+    color: #2f1339; }
+  .page-id-32 #primary p {
+    margin-left: 5%;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-family: "Merriweather"; }
+  .page-id-32 #primary form label {
+    font-family: "Novecento";
+    color: #2f1339; }
+  .page-id-32 #primary form input {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0; }
+  .page-id-32 #primary form textarea {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    max-width: 88%; }
+  .page-id-32 #primary form input[type="button"],
+  .page-id-32 #primary form input[type="reset"],
+  .page-id-32 #primary form input[type="submit"] {
+    background: #248a83;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Novecento";
+    font-size: 14.4px;
+    font-size: .9rem;
+    line-height: 1;
+    padding: .75rem 1.5rem; }
+
+.page-id-32 #secondary {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  font-family: "Merriweather"; }
+  .page-id-32 #secondary h2 {
+    font-family: "Novecento";
+    color: #2f1339;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 2px; }
+  .page-id-32 #secondary span {
+    font-family: "Merriweather-Bold"; }

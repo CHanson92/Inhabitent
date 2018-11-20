@@ -15,16 +15,16 @@
 					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
 					<p><i class="fa fa-phone"></i><a href="tel:5553434567891">778-456-7891</a></p>
 					<p>
-						<span><i class="fa fa-facebook-square"></i></span>
-						<span><i class="fa fa-twitter-square"></i></span>
-						<span><i class="fa fa-google-plus-square"></i></span>
+						<span class='icons'><i class="fa fa-facebook-square"></i></span>
+						<span class='icons'><i class="fa fa-twitter-square"></i></span>
+						<span class='icons'><i class="fa fa-google-plus-square"></i></span>
 					</p>
 				</section>
 				<section class="business-hours">
 					<h3>Business Hours</h3>
-					<p>Monday-Friday: 9am to 5pm</p>
-					<p>Saturday: 10am to 2pm</p>
-					<p>Sunday: Closed</p>
+					<p><span class="week">Monday-Friday:</span> 9am to 5pm</p>
+					<p><span class="week">Saturday:</span> 10am to 2pm</p>
+					<p><span class="week">Sunday:</span> Closed</p>
 				</section>
 				<section class="inhabitent-logo">
 					<img src="/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-text.svg" href="<?php echo esc_url( home_url( 'http://localhost:3000/inhabitent/' ) ); ?>" rel="home">

@@ -11,28 +11,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php
+   			$args = array( 'post_type' => 'post', 'postsperpage=3', 'order' => 'ASC' );
+   			$news_posts = get_posts( $args ); // returns an array of posts
+		?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+		<?php foreach ( $news_posts as $post ) : setup_postdata( $post ); ?>
+   		<?php /* Content from your array of post results goes here */ ?>
+		<?php endforeach; wp_reset_postdata(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
