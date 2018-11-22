@@ -12,12 +12,12 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<section class="site-info">
 					<h3>Contact Info</h3>
-					<p><i class="fa fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
-					<p><i class="fa fa-phone"></i><a href="tel:5553434567891">778-456-7891</a></p>
+					<p><i class="fas fa-envelope"></i><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
+					<p><i class="fas fa-phone"></i><a href="tel:5553434567891">778-456-7891</a></p>
 					<p>
-						<span class='icons'><i class="fa fa-facebook-square"></i></span>
-						<span class='icons'><i class="fa fa-twitter-square"></i></span>
-						<span class='icons'><i class="fa fa-google-plus-square"></i></span>
+						<span class='icons'><i class="fab fa-facebook-square"></i></span>
+						<span class='icons'><i class="fab fa-twitter-square"></i></span>
+						<span class='icons'><i class="fab fa-google-plus-square"></i></span>
 					</p>
 				</section>
 				<section class="business-hours">

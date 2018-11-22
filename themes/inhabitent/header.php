@@ -27,7 +27,7 @@
 				<img class="logo" src='/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-full.svg'>
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php if( is_page('find-us')) { ?>
+					<?php if( is_page('find-us') || is_archive() || is_home()) { ?>
 					<h1 class="homelogo"><a href="<?php echo esc_url( home_url() ); ?>" 
 					rel="home"><img class="home" src='/inhabitent/wp-content/themes/inhabitent/images/logos/inhabitent-logo-tent.svg'></a></h1>
 					<?php } else { ?>

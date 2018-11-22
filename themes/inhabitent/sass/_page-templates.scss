@@ -118,10 +118,6 @@
                 }
     }
 
-/* Shop page */
-
-
-
 /* Journal page */
 
 .blog {
@@ -130,6 +126,12 @@
         grid-template-rows: 3rem auto;
         grid-template-columns: 1fr 26rem;
         }
+
+    .site-content {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     header {
         grid-template-rows: 1fr;
@@ -140,17 +142,107 @@
         .logo {
             display: none;
         }
+
+        nav {
+            li {
+                a {
+                    color:#248A83;
+                    text-shadow: none;
+                }
+            }
+        }
+
     }
 
-    .entry-header {
-        display: none;
+    #primary {
+        grid-row: 2;
+        border-right: 1px solid #e1e1e1;
+        align-items: center;
+
+        header {
+            border-bottom: none;
+            h1 {
+                display:none;
+            }
+        }
+
+        article {
+            margin-top: 3rem;
+
+            .entry-header {
+                display: block;
+
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            h2 {
+            display: flex;
+            justify-content: center;
+
+                a {
+                color: white;
+                background-color: #248A83;
+                font-family: "Novecento";
+                font-size: 2.1rem;
+                letter-spacing: 2px;
+                padding: 0.75rem 1.5rem;
+                text-decoration: none;
+                }
+            }
+
+            p {
+                text-align: left;
+                font-size: 1rem;
+                line-height: 1.75rem;
+                font-family: "Merriweather";
+            }
+        
+        .entry-meta {
+            display: inline-block;
+            font-family: "Novecento";
+            color: white;
+            background-color: #248A83;
+            padding: 0.00005rem 1.5rem;
+            position: relative;
+            bottom: 9.35rem;
+            left: 24rem;
+            margin-right: 33rem;
+            }
+
+        .entry-content {
+            margin: 0 8rem 0;
+            }
+        }
+
+        p {
+            a {
+                color: black;
+                font-family: "Novecento";
+                text-decoration: none;
+                text-transform: uppercase;
+                border:black solid 1px;
+                padding: .75rem 1.5rem;
+                margin-left: 8rem;
+
+                &:hover {
+                    background-color: #248a83;
+                    color: white;
+                    border: none;
+                }
+            }
+        }
     }
 
     #secondary {
         grid-column: 2;
         grid-row: 2;
-        text-align: center;
+        text-align: left;
         font-family: "Merriweather";
+        padding-left: 10%;
 
         h2 {
             font-family: "Novecento";
@@ -163,8 +255,190 @@
         span {
             font-family: "Merriweather-Bold";
         }
+
+        a {
+            display:block;
+            color: #248a83;
+            a:hover,
+            a:visited {
+                color: purple;
+            }
+            .icons {
+                color: #404040;
+            }
+        }
+
+        #archives-2 {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+            }
+
+        }
     }
 
+}
+
+/* Archive page */
+
+.archive {
+
+        #page {
+            grid-template-rows: 3rem auto;
+            grid-template-columns: 1fr 26rem;
+            }
+    
+        .site-content {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        header {
+            grid-template-rows: 1fr;
+            grid-column: 1/3;
+            background-image: none;
+            border-bottom: 1px solid #e1e1e1;
+    
+            .logo {
+                display: none;
+            }
+    
+            nav {
+                li {
+                    a {
+                        color:#248A83;
+                        text-shadow: none;
+                    }
+                }
+            }
+    
+        }
+    
+        #primary {
+            grid-row: 2;
+            border-right: 1px solid #e1e1e1;
+            align-items: center;
+    
+            header {
+                border-bottom: none;
+                h1 {
+                    display:none;
+                }
+            }
+    
+            article {
+                margin-top: 3rem;
+    
+                .entry-header {
+                    display: block;
+    
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+    
+                h2 {
+                display: flex;
+                justify-content: center;
+    
+                    a {
+                    color: white;
+                    background-color: #248A83;
+                    font-family: "Novecento";
+                    font-size: 2.1rem;
+                    letter-spacing: 2px;
+                    padding: 0.75rem 1.5rem;
+                    text-decoration: none;
+                    }
+                }
+    
+                p {
+                    text-align: left;
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+                    font-family: "Merriweather";
+                }
+            
+            .entry-meta {
+                display: inline-block;
+                font-family: "Novecento";
+                color: white;
+                background-color: #248A83;
+                padding: 0.00005rem 1.5rem;
+                position: relative;
+                bottom: 9.35rem;
+                left: 24rem;
+                margin-right: 33rem;
+                }
+    
+            .entry-content {
+                margin: 0 8rem 0;
+                }
+            }
+    
+            p {
+                a {
+                    color: black;
+                    font-family: "Novecento";
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border:black solid 1px;
+                    padding: .75rem 1.5rem;
+                    margin-left: 8rem;
+    
+                    &:hover {
+                        background-color: #248a83;
+                        color: white;
+                        border: none;
+                    }
+                }
+            }
+        }
+    
+        #secondary {
+            grid-column: 2;
+            grid-row: 2;
+            text-align: left;
+            font-family: "Merriweather";
+            padding-left: 10%;
+    
+            h2 {
+                font-family: "Novecento";
+                color: #2f1339;
+                font-size: 1.75rem;
+                line-height: 1.75rem;
+                letter-spacing: 2px;
+            }
+    
+            span {
+                font-family: "Merriweather-Bold";
+            }
+    
+            a {
+                display:block;
+                color: #248a83;
+                a:hover,
+                a:visited {
+                    color: purple;
+                }
+                .icons {
+                    color: #404040;
+                }
+            }
+    
+            #archives-2 {
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding-left: 0;
+                }
+    
+            }
+        }
 }
 
 /* About Us page */
@@ -264,7 +538,8 @@
     #primary {
         grid-row: 2;
         border-right: 1px solid #e1e1e1;
-        align-items: center;
+        align-items: left;
+        padding-left: 10%;
 
         iframe {
         border: none;
@@ -325,8 +600,9 @@
     #secondary {
         grid-column: 2;
         grid-row: 2;
-        text-align: center;
+        text-align: left;
         font-family: "Merriweather";
+        padding-left: 10%;
 
         h2 {
             font-family: "Novecento";
@@ -339,6 +615,67 @@
         span {
             font-family: "Merriweather-Bold";
         }
+
+        a {
+            display:block;
+            color: #248a83;
+            a:hover,
+            a:visited {
+                color: purple;
+            }
+            .icons {
+                color: #404040;
+            }
+        }
     }
 }
 
+/* Shop page */
+
+.post-type-archive {
+
+    #page {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        background-image: none;
+        .logo {
+            display: none;
+        }
+    }
+
+    #primary {
+        margin-bottom: 5em;
+    }
+
+    .page-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        border-top: lightgrey dotted 1px;
+
+        article {
+        height: 250px;
+        width: 250px;
+
+        .thumbnail-wrapper {
+            height: 250px;
+            overflow: hidden;
+            a {
+                img {
+                    max-height: 250px;
+                    max-width: none;
+                    width: auto;
+                    border: lightgrey solid 1px;
+                    border-bottom: lightgrey solid 0.3rem;
+                }
+            }
+        }
+
+        .product-title-box {
+            border: lightgrey solid 1px;
+        }
+    }
+}
+}

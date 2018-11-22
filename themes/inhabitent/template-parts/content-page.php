@@ -20,5 +20,6 @@
 				'after'  => '</div>',
 			) );
 		?>
+		<p><a href="" class="read-more black-btn">Read more →</a></p>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

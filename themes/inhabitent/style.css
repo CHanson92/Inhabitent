@@ -798,11 +798,17 @@ footer {
       color: white;
       font-family: 'Novecento'; }
 
-/* Shop page */
 /* Journal page */
 .blog #page {
   grid-template-rows: 3rem auto;
   grid-template-columns: 1fr 26rem; }
+
+.blog .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
 
 .blog header {
   grid-template-rows: 1fr;
@@ -811,15 +817,79 @@ footer {
   border-bottom: 1px solid #e1e1e1; }
   .blog header .logo {
     display: none; }
+  .blog header nav li a {
+    color: #248A83;
+    text-shadow: none; }
 
-.blog .entry-header {
-  display: none; }
+.blog #primary {
+  grid-row: 2;
+  border-right: 1px solid #e1e1e1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .blog #primary header {
+    border-bottom: none; }
+    .blog #primary header h1 {
+      display: none; }
+  .blog #primary article {
+    margin-top: 3rem; }
+    .blog #primary article .entry-header {
+      display: block; }
+      .blog #primary article .entry-header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+    .blog #primary article h2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .blog #primary article h2 a {
+        color: white;
+        background-color: #248A83;
+        font-family: "Novecento";
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none; }
+    .blog #primary article p {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      font-family: "Merriweather"; }
+    .blog #primary article .entry-meta {
+      display: inline-block;
+      font-family: "Novecento";
+      color: white;
+      background-color: #248A83;
+      padding: 0.00005rem 1.5rem;
+      position: relative;
+      bottom: 9.35rem;
+      left: 24rem;
+      margin-right: 33rem; }
+    .blog #primary article .entry-content {
+      margin: 0 8rem 0; }
+  .blog #primary p a {
+    color: black;
+    font-family: "Novecento";
+    text-decoration: none;
+    text-transform: uppercase;
+    border: black solid 1px;
+    padding: .75rem 1.5rem;
+    margin-left: 8rem; }
+    .blog #primary p a:hover {
+      background-color: #248a83;
+      color: white;
+      border: none; }
 
 .blog #secondary {
   grid-column: 2;
   grid-row: 2;
-  text-align: center;
-  font-family: "Merriweather"; }
+  text-align: left;
+  font-family: "Merriweather";
+  padding-left: 10%; }
   .blog #secondary h2 {
     font-family: "Novecento";
     color: #2f1339;
@@ -828,6 +898,131 @@ footer {
     letter-spacing: 2px; }
   .blog #secondary span {
     font-family: "Merriweather-Bold"; }
+  .blog #secondary a {
+    display: block;
+    color: #248a83; }
+    .blog #secondary a a:hover,
+    .blog #secondary a a:visited {
+      color: purple; }
+    .blog #secondary a .icons {
+      color: #404040; }
+  .blog #secondary #archives-2 ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+
+/* Archive page */
+.archive #page {
+  grid-template-rows: 3rem auto;
+  grid-template-columns: 1fr 26rem; }
+
+.archive .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+
+.archive header {
+  grid-template-rows: 1fr;
+  grid-column: 1/3;
+  background-image: none;
+  border-bottom: 1px solid #e1e1e1; }
+  .archive header .logo {
+    display: none; }
+  .archive header nav li a {
+    color: #248A83;
+    text-shadow: none; }
+
+.archive #primary {
+  grid-row: 2;
+  border-right: 1px solid #e1e1e1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .archive #primary header {
+    border-bottom: none; }
+    .archive #primary header h1 {
+      display: none; }
+  .archive #primary article {
+    margin-top: 3rem; }
+    .archive #primary article .entry-header {
+      display: block; }
+      .archive #primary article .entry-header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+    .archive #primary article h2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .archive #primary article h2 a {
+        color: white;
+        background-color: #248A83;
+        font-family: "Novecento";
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none; }
+    .archive #primary article p {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      font-family: "Merriweather"; }
+    .archive #primary article .entry-meta {
+      display: inline-block;
+      font-family: "Novecento";
+      color: white;
+      background-color: #248A83;
+      padding: 0.00005rem 1.5rem;
+      position: relative;
+      bottom: 9.35rem;
+      left: 24rem;
+      margin-right: 33rem; }
+    .archive #primary article .entry-content {
+      margin: 0 8rem 0; }
+  .archive #primary p a {
+    color: black;
+    font-family: "Novecento";
+    text-decoration: none;
+    text-transform: uppercase;
+    border: black solid 1px;
+    padding: .75rem 1.5rem;
+    margin-left: 8rem; }
+    .archive #primary p a:hover {
+      background-color: #248a83;
+      color: white;
+      border: none; }
+
+.archive #secondary {
+  grid-column: 2;
+  grid-row: 2;
+  text-align: left;
+  font-family: "Merriweather";
+  padding-left: 10%; }
+  .archive #secondary h2 {
+    font-family: "Novecento";
+    color: #2f1339;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: 2px; }
+  .archive #secondary span {
+    font-family: "Merriweather-Bold"; }
+  .archive #secondary a {
+    display: block;
+    color: #248a83; }
+    .archive #secondary a a:hover,
+    .archive #secondary a a:visited {
+      color: purple; }
+    .archive #secondary a .icons {
+      color: #404040; }
+  .archive #secondary #archives-2 ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
 
 /* About Us page */
 .page-id-30 #page {
@@ -896,9 +1091,10 @@ footer {
 .page-id-32 #primary {
   grid-row: 2;
   border-right: 1px solid #e1e1e1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding-left: 10%; }
   .page-id-32 #primary iframe {
     border: none; }
   .page-id-32 #primary h2 {
@@ -943,8 +1139,9 @@ footer {
 .page-id-32 #secondary {
   grid-column: 2;
   grid-row: 2;
-  text-align: center;
-  font-family: "Merriweather"; }
+  text-align: left;
+  font-family: "Merriweather";
+  padding-left: 10%; }
   .page-id-32 #secondary h2 {
     font-family: "Novecento";
     color: #2f1339;
@@ -953,3 +1150,43 @@ footer {
     letter-spacing: 2px; }
   .page-id-32 #secondary span {
     font-family: "Merriweather-Bold"; }
+  .page-id-32 #secondary a {
+    display: block;
+    color: #248a83; }
+    .page-id-32 #secondary a a:hover,
+    .page-id-32 #secondary a a:visited {
+      color: purple; }
+    .page-id-32 #secondary a .icons {
+      color: #404040; }
+
+/* Shop page */
+.post-type-archive #page {
+  grid-template-columns: 1fr; }
+
+.post-type-archive header {
+  background-image: none; }
+  .post-type-archive header .logo {
+    display: none; }
+
+.post-type-archive #primary {
+  margin-bottom: 5em; }
+
+.post-type-archive .page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  border-top: lightgrey dotted 1px; }
+  .post-type-archive .page-content article {
+    height: 250px;
+    width: 250px; }
+    .post-type-archive .page-content article .thumbnail-wrapper {
+      height: 250px;
+      overflow: hidden; }
+      .post-type-archive .page-content article .thumbnail-wrapper a img {
+        max-height: 250px;
+        max-width: none;
+        width: auto;
+        border: lightgrey solid 1px;
+        border-bottom: lightgrey solid 0.3rem; }
+    .post-type-archive .page-content article .product-title-box {
+      border: lightgrey solid 1px; }
